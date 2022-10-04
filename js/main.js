@@ -37,7 +37,8 @@ function handleLose(){
     if(rect.right >= window.innerWidth){
         playerScoreElem.textContent = parseInt(playerScoreElem.textContent) + 1
     }else{
-        computerScoreElem.textContent = parseInt(computerScoreElem.textContent) + 1
+        // computerScoreElem.textContent = parseInt(computerScoreElem.textContent) + 1
+        //ISSUE: computer score continuously climbs up and ball stays in the middle//
     }
     ball.reset()
     computerPaddle.reset()
